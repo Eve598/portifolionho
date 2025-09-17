@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo de Flex</title>
+<style>
+  /* Container principal usando flex */
+  .container {
+    display: flex; /* ativa o flexbox, organiza os elementos filhos em linha */
+    gap: 10px;     /* espaço entre os elementos */
+    padding: 20px;
+    background-color: #eee;
+  }
+
+  /* Elemento 1 */
+  .item1 {
+    flex: 1; /* ocupa 1 parte do espaço disponível */
+    background-color: #f39c12;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Elemento 2 */
+  .item2 {
+    flex: 2; /* ocupa 2 partes do espaço disponível (maior que o item1) */
+    background-color: #9b59b6;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Elemento 3 */
+  .item3 {
+    flex: 1; /* ocupa 1 parte do espaço disponível, igual ao item1 */
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h2>Exemplo de Flex</h2>
+<div class="container">
+  <div class="item1">Item 1 (flex:1)</div>
+  <div class="item2">Item 2 (flex:2)</div>
+  <div class="item3">Item 3 (flex:1)</div>
+</div>
+
+</body>
+</html>

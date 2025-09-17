@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional SUPER BOOMM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; 
+            color: #fff; 
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: #5e0094f3; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        
+        .conteudo {
+            display: flex; /*duas colunas*/
+            gap: 30px; /*o espaço entre elas*/
+            padding: 40px;
+        }
+
+        /* Coluna do ladinhoo*/
+        .coluna-lateral {
+            flex: 1;
+            max-width: 350px; /*largura da colunhaa*/
+            background-color: #5e0094f3;
+            border-radius: 15px;
+            padding: 30px 20px; /*espaço internhoo*/
+            display: flex;
+            flex-direction: column; /*deixa as coisas uma embaixo da outra nha*/
+            align-items: center; /*deixa as coisas alinhaaaadas*/
+            gap: 20px; /*espaço entra cada coisinhaa*/
+        }
+
+        .foto-container {
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 90%;
+            border: 3px solid #fff;
+            transition: transform 0.6s ease;
+        }
+
+        .foto-container img {
+            width: 300px; /*larguranha*/
+            height: 280px; /*comprimentonho*/
+            position: relative;
+            top: -10px;
+            left: -40px;
+            object-fit: cover;
+            transition: transform 0.6s ease; /*animacãonha*/
+        }
+
+        .foto-container:hover img {
+            transform: scale(1.08); 
+        }
+
+        .info-pessoal { /*espacinhooo q separanhaa*/
+            width: 100%;
+            background-color: rgba(255,255,255,0.1); 
+            border-radius: 10px; /*bordanha*/
+            padding: 10px; /*tamanhooo do espacinhooo*/
+        }
+
+        .info-pessoal p {
+            margin: 20px 0; /*espaço da parte de baixo*/
+        }
+
+
+        .coluna-direita {
+            flex: 2;
+        }
+
+        .linguagens {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0 40px;
+        }
+
+        .linguagem {
+            width: 140px;
+            height: 140px;
+            background-color: #5e009417; 
+            border: 2px solid #fff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center; /*deixa no meinhoo*/
+            justify-content: center; /*deixa no meinhoo*/
+            text-align: center; /*deixa no meinhoo*/
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .linguagem img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 8px;
+        }
+
+        .linguagem:hover {
+            transform: scale(1.08);
+        }
+
+.projeto.github {
+    width: 150px;  /* menor que os outros projetos */
+    height: 150px;
+}
+
+
+        .projetos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .projeto {
+            width: 300px;
+            height: 180px;
+            background-color: #5e0094f3; 
+            border: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 15px;
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .projeto img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 8px;
+        }
+
+        .projeto:hover {
+            transform: scale(1.08);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #5e0094f3;
+            margin-top: 40px;
+        }
+
+
+        @media (max-width: 900px) { /*é para os menos afortunados q tem uma tela menor q 900px*/
+            .conteudo {
+                flex-direction: column; /*O TRABALHO Q EU TIVE PARA COLOCAR AS COISAS UMA DO LADO DA OUTRA 
+                PRA AGORA UM POBRE FUDE TUDO E FICAR UM EM CIMA DO OUTRO*/
+                align-items: center; /*DEIXA NO MEIO PRO POBRE MISERAVEL CONSEGUIR VER*/
+            }
+
+            .coluna-lateral, .coluna-direita {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Evelyn Andrade</h1>
+    </header>
+
+    <div class="conteudo">
+       
+        <div class="coluna-lateral">
+            <div class="foto-container">
+                <img src="img/eumano.png" alt="Foto Evelyn">
+            </div>
+            <div class="info-pessoal">
+                <p><strong>Nome:</strong> Evelyn Andrade Sena</p>
+                <br>
+                <p><strong>Data de Nascimento:</strong> 20/09/2008</p>
+                <br>
+                <p><strong>Email:</strong> evelynandradesena2018@gmail.com</p>
+                <br>
+                <p><strong>Telefone:</strong> 11 99433-4022</p>
+                <br>
+                <p><strong>Sobre mim:</strong> Olá! Meu nome é Evelyn Andrade Sena, tenho 17 anos e estou no Ensino Médio. <br>
+                     Tenho paixão por tecnologia e desenvolvimento de sistemas. Atualmente estou estudando <br>
+                      para me tornar uma desenvolvedora completa, aprendendo linguagens como HTML, CSS, JavaScript, Python e Lua. <br>
+                       Adoro criar projetos criativos, explorar novas ideias e buscar soluções inteligentes <br>
+                        para problemas do dia a dia. Estou sempre em busca de aprendizado e desafios que me façam crescer como profissional e como pessoa.</p>
+            </div>
+        </div>
+
+      
+        <div class="coluna-direita">
+            <section id="linguagens">
+                <h2>Linguagens que Estou Aprendendo</h2>
+                <div class="linguagens">
+                    <div class="linguagem">
+                        <img src="img/html.png" alt="">
+                        HTML (AGORA VAI SER LINGUAGEM SIM)
+                    </div>
+                    <div class="linguagem">
+                        <img src="img/CSS.png" alt="">
+                        CSS
+                    </div>
+                    <div class="linguagem">
+                        <img src="img/JavaScript.png" alt="">
+                        JavaScript
+                    </div>
+                    
+                    <div class="linguagem">
+                        <img src="img/Python.png" alt="">
+                        Python
+                    </div>
+                    <div class="linguagem">
+                        <img src="img/Lua.png" alt="">
+                        Lua
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <section id="projetos">
+                <h2>Meus Projetos</h2>
+                <div class="projetos">
+                    <a href="harry.html" class="projeto">
+                        <img src="img/botao.png" alt="Harry">
+                        
+                    </a>
+                    <a href="steven.html" class="projeto">
+                        <img src="img/steve-.png" alt="Steven">
+                        
+                    </a>
+                    <a href="cuphead.html" class="projeto">
+                        <img src="img/mug.webp" alt="Cuphead">
+                        
+                    </a>
+                    
+                    <p>Conheça mais alguns dos meus trabalhos através do meu GitHub:</p>
+<a href="https://github.com/Eve598" class="projeto github">
+    <img src="img/gitttt.png" alt="GitHub">
+</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Portfólio de Evelyn Andrade</p>
+    </footer>
+
+</body>
+</html>
